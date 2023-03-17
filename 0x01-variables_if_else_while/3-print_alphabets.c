@@ -1,21 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ *main - Entry point
+ *Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char letter = 'a';
+	char lower = 'a';
+	char upper = 'A';
 
-	while (letter < 'z')
+	while (lower <= 'z') /*print lowercases a-z*/
 	{
-		putchar(letter);
-		letter++;
+		putchar(lower);
+		lower++;
 	}
+
+	while (upper <= 'Z') /*print uppercase A-Z*/
+	{
+		putchar(upper);
+		upper++;
+	}
+
 	putchar('\n');
 
 	return (0);
 }
-
