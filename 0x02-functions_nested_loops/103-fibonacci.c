@@ -1,30 +1,29 @@
 #include <stdio.h>
 
-
 /**
- * main - Fibonacci sequence whose
- * values do not exceed 4,000,000
- *
+ * main - print sum of even Fionacci sequence up to 4,000,000
  * Return: 0
  */
 
 int main(void)
 {
-	long a = 1;
-	long b = 2;
-	long c;
-	long d = 0;
+	int sum_of_evens = 0;
+	int a;
+	int b;
+	int sum = 1;
 
-	while (a <= 4000000)
+	a = 1;
+	b = 1;
+
+	while (b < 4000000)
 	{
-		c = a + b;
+		sum = a + b;
 		a = b;
-		b = a;
-		if (a % 2 == 0)
-		{
-			d = d + a;
-		}
+		b = sum;
+		if ((sum <= 4000000) && (sum % 2 == 0))
+			sum_of_evens += sum;
 	}
-	printf("%lu\n", d);
+	printf("%d\n", sum_of_evens);
+
 	return (0);
 }
