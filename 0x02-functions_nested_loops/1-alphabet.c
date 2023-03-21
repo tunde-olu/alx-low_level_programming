@@ -4,11 +4,11 @@
 
 
 /**
- * print_alphabeth - print lower case alphabeth
+ * print_alphabet - print lower case alphabeth
  * Return: Always 0
  */
 
-void print_alphabeth(void)
+void print_alphabet(void)
 {
 	char letter;
 
