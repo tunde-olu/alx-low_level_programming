@@ -12,8 +12,9 @@ int main(void)
 	long a = 1;
 	long b = 2;
 	long c;
+	int i;
 
-	for (int i = 0; i < 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		if (i == 49)
 		{
