@@ -21,7 +21,7 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = a;
-		if (a % 2 == 0)
+		if ((c <= 4000000) && (a % 2 == 0))
 		{
 			d = d + a;
 		}
