@@ -14,23 +14,9 @@ void more_numbers(void)
 
 		for (j = 0; j <= 14; j++)
 		{
-			int k;
-
-			if (j < 10)
-			{
-				k = j;
-			}
-			else
-			{
-				k = j / 10;
-			}
-
-			_putchar('0' + k);
-
-			if (j < 10)
-				continue;
-
-			_putchar('0' + j % 10);
+			if (i >= 10)
+				_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
 		}
 		_putchar('\n');
 	}
