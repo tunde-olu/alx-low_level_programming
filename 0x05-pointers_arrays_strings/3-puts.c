@@ -13,6 +13,6 @@ void _puts(char *str)
 		str++;
 	}
 
-	_putchat('\n');
+	_putchar('\n');
 }
 
