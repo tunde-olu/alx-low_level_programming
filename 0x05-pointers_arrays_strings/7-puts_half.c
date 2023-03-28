@@ -34,12 +34,11 @@ void puts_half(char *str)
 	else
 		half = (half - 1) / 2;
 
-	int i = half;
 
-	while (str[i] != '\0')
+	while (str[half] != '\0')
 	{
-		_putchar(str[i]);
-		i++;
+		_putchar(str[half]);
+		half++;
 	}
 
 	_putchar('\n');
