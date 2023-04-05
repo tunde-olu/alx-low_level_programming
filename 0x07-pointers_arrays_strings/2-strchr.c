@@ -9,14 +9,13 @@
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int i;
 
-	while (s[i] != '\0' && s[i] != c) /* find match */
-		i++;
-
-	if (s[i] == c) /* if match, assign to address */
-		return (&s[i]);
+	for (i = 0; (s[i] != c) && (s[i] != '\0'); i++)
+		;
+	if (s[i] == c)
+		return (s + i);
 	else
-		return (NULL);
+		return ('\0');
 }
 
