@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 
 	len += ac; /* to account for the null char in each word in av */
 
-	result = malloc(sizeof(char) * len);
+	result = malloc(sizeof(char) * len + 1);
 
 	if (result == NULL)
 		return (NULL);
