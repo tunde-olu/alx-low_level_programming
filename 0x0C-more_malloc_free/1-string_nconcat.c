@@ -43,15 +43,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	n_len = n;
-
 	s1_len = _strlen(s1);
 	s2_len = _strlen(s2);
 
 	if (n >= s2_len)
 		n_len = s2_len;
+	else
+		n_len = n;
 
-	result = malloc((sizeof(char) * (s1_len + 1)));
+	result = malloc((sizeof(char) * (s1_len + n_len + 1)));
 
 	if (result == NULL)
 	{
