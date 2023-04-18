@@ -32,7 +32,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0; src[i]; i++)
+	for (i = 0; src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
 	}
@@ -73,6 +73,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog_malloc->owner == NULL)
 	{
 		free(dog_malloc->name);
+		free(dog_malloc);
 		return (NULL);
 	}
 
